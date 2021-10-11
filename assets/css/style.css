@@ -1,0 +1,123 @@
+:root {
+  --wp-responsive-slider-arrows-ncy: 50;
+}
+
+.wp-responsive-slider .swiper-container {
+  height: 100vh;
+}
+
+.wp-responsive-slider .swiper-slide {
+  overflow: hidden;
+}
+
+.wp-responsive-slider .slide-inner {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position: 50% 50%;
+  object-fit: cover;
+}
+
+.wp-responsive-slider .slide-inner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.wp-responsive-slider .wprs-button-next {
+  right: 10px;
+  left: auto;
+}
+
+.wp-responsive-slider .wprs-button-prev {
+  left: 10px;
+  right: auto;
+}
+
+.wp-responsive-slider .wprs-button-prev, .wp-responsive-slider .wprs-button-next {
+  position: absolute;
+  top: 50%;
+  margin-top: calc(var(--wp-responsive-slider-arrows-ncy) - 50px);
+  z-index: 10;
+  cursor: pointer;
+  -webkit-background-size: 27px 44px;
+  background-size: 27px 44px;
+  background: no-repeat 50%;
+}
+
+.wp-responsive-slider .wprs-button-prev, .wp-responsive-slider .wprs-button-next {
+  color: #fff;
+  font-size: 36px;
+}
+
+.wp-responsive-slider .wprs-slidenav-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wp-responsive-slider .swiper-pagination-progressbar {
+  background: rgba(0, 0, 0, 0.25);
+  position: absolute;
+}
+
+.wp-responsive-slider .slide-inner {
+  position: relative;
+}
+
+.wp-responsive-slider .slide-inner:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* background: rgba(0, 0, 0, 0.25); */
+  height: 100%;
+  width: 100%;
+  z-index: 99;
+}
+
+.wp-responsive-slider .swiper-pagination-bullet {
+  margin: 5px;
+}
+
+.wp-responsive-slider .wprs-position-bottom {
+  bottom: -30px;
+  left: 0;
+  right: 0;
+}
+
+.wp-responsive-slider .wprs-position-bottom.swiper-pagination-progressbar {
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.wp-responsive-slider .wprs-dots-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(30px);
+}
+
+.wp-responsive-slider .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+  background: #007aff;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transform: scale(0);
+}
+
+.wp-responsive-slider .swiper-pagination-fraction, .swiper-pagination-custom, .swiper-container-horizontal .swiper-pagination-bullets, .swiper-container-horizontal+.swiper-pagination-bullets {
+  bottom: -50px;
+  width: 100%;
+}
+
+.wp-responsive-slider .wprs-position-z-index {
+  z-index: 1;
+}
