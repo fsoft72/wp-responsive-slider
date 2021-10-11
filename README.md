@@ -1,4 +1,4 @@
-# WP Responsive Slider for Elementor
+# OS3 Responsive Slider for Elementor
 
 Written by Fabio Rotondo
 

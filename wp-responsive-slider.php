@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Plugin Name: WP Responsive Slider
+ * Plugin Name: OS3 Responsive Slider for Elementor
  * Plugin URI: https://wordpress.org/plugins/
  * Description: This plugin will create responsive slider/carousel for Elementor.
  * Version: 1.0.2
@@ -12,8 +12,8 @@
  * Domain Path: /languages/
  */
 
-define('WP_Responsive_Slider', plugin_dir_path(__FILE__));
-final class WP_Responsive_Slider
+define('OS3_Responsive_Slider', plugin_dir_path(__FILE__));
+final class OS3_Responsive_Slider
 {
 	const VERSION = '1.0.0';
 
@@ -88,7 +88,7 @@ final class WP_Responsive_Slider
 
 	public function init_widgets()
 	{
-		require_once(WP_Responsive_Slider . './widgets/responsive-slider.php');
+		require_once(OS3_Responsive_Slider . './widgets/responsive-slider.php');
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type(new Elementor\Responsive_Slider());
 	}
 
@@ -151,4 +151,4 @@ final class WP_Responsive_Slider
 	}
 }
 
-WP_Responsive_Slider::instance();
+OS3_Responsive_Slider::instance();
